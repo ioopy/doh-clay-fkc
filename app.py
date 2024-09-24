@@ -3,7 +3,11 @@ import streamlit_authenticator as stauth
 from menu import menu
 import yaml
 from yaml.loader import SafeLoader
-from streamlit_authenticator.utilities.exceptions import (LoginError) 
+from streamlit_authenticator.utilities.exceptions import (LoginError)
+
+from utils.func import hide_header_icons 
+
+hide_header_icons()
 
 with open('conifg.yaml', 'r', encoding='utf-8') as file:
     config = yaml.load(file, Loader=SafeLoader)
