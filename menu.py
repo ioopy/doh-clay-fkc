@@ -1,7 +1,7 @@
 import streamlit as st
 
 def authenticated_menu(initial_page=False):
-    st.sidebar.page_link("pages/Home.py", label="🏚️ เส้นไข่ขาว")
+    st.sidebar.page_link("pages/Home.py", label="🏚️ หน้าแรก")
     st.sidebar.page_link("pages/Page1.py", label="1️⃣ การวิเคราะห์ที่ 1")
     st.sidebar.page_link("pages/Page2.py", label="2️⃣ การวิเคราะห์ที่ 2")
     st.sidebar.page_link("pages/Page3.py", label="3️⃣ การวิเคราะห์ที่ 3")
@@ -9,7 +9,7 @@ def authenticated_menu(initial_page=False):
     st.sidebar.page_link("pages/Page5.py", label="5️⃣ การวิเคราะห์ที่ 5")
     st.sidebar.page_link("pages/Page6.py", label="6️⃣ การวิเคราะห์ที่ 6")
     st.sidebar.page_link("pages/Page7.py", label="7️⃣ การวิเคราะห์ที่ 7")
-    st.sidebar.page_link("pages/Page8.py", label="8️⃣ การวิเคราะห์ที่ 8")
+    # st.sidebar.page_link("pages/Page8.py", label="8️⃣ การวิเคราะห์ที่ 8")
     st.sidebar.markdown("---")
     st.session_state.authenticator.logout("Logout", "sidebar")
 
